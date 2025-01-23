@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<html lang="en">
 <head>
-    <title>Results</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Results</title>
 </head>
-<body>
-    <h1>Detection Results</h1>
-    <p>Gender: {{ gender }}</p>
-    <p>Age: {{ age }}</p>
-    <img src="{{ image_path }}" alt="Uploaded Image" width="300">
+<body class="result-bg">
+    <div class="container result-container">
+        <h1>Detection Results</h1>
+        <p>Gender: <span class="result-text">{{ gender }}</span></p>
+        <p>Age: <span class="result-text">{{ age }}</span></p>
+        <img src="{{ image_path }}" alt="Uploaded Image" class="uploaded-img">
+        <button onclick="window.location.href='/'">Go Back</button>
+    </div>
 </body>
 </html>
