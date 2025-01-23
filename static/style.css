@@ -1,0 +1,113 @@
+/* General Styles for both pages */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+/* Button styles */
+button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+/* Input file styles */
+input[type="file"] {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+}
+
+/* Styles for the container (both index and result pages) */
+.container, .result-container {
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Shared Result Image Style */
+.uploaded-img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 2px solid #ff6600;
+}
+
+/* Index Page Specific */
+.index-bg {
+    background-image: url('/static/images/ageimg.jpg');
+    background-size: 1100px;
+    background-position: center center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-bg .container {
+    background-color: rgba(0, 0, 0, 0.7); /* Slight overlay */
+    border-radius: 10px;
+    padding: 40px;
+    width: 60%;
+    text-align: center;
+}
+
+.index-bg h1 {
+    color: #ff6600;
+    font-size: 36px;
+}
+
+/* Result Page Specific */
+.result-bg {
+    background-image: url('/static/images/resimg.jpg');
+    background-size: 1100px;
+    background-position: center center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 60%;
+}
+
+.result-container h1 {
+    font-size: 40px;
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+.result-container p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Additional Styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
