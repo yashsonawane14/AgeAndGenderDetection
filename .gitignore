@@ -1,0 +1,24 @@
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore .env files (for sensitive data like API keys)
+.env
+
+# Ignore uploaded files (if they aren't needed in the repo)
+uploads/
+
+# Ignore static files (like images, CSS, etc.)
+static/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Ignore build artifacts
+*.log
+*.swp
